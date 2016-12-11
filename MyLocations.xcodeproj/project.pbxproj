@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		658CB51E1DF6FBAB00667B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CB51D1DF6FBAB00667B29 /* AppDelegate.swift */; };
-		658CB5201DF6FBAB00667B29 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CB51F1DF6FBAB00667B29 /* FirstViewController.swift */; };
+		658CB5201DF6FBAB00667B29 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CB51F1DF6FBAB00667B29 /* CurrentLocationViewController.swift */; };
 		658CB5221DF6FBAB00667B29 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CB5211DF6FBAB00667B29 /* SecondViewController.swift */; };
 		658CB5251DF6FBAB00667B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658CB5231DF6FBAB00667B29 /* Main.storyboard */; };
 		658CB5271DF6FBAB00667B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658CB5261DF6FBAB00667B29 /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		658CB51A1DF6FBAB00667B29 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		658CB51D1DF6FBAB00667B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		658CB51F1DF6FBAB00667B29 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		658CB51F1DF6FBAB00667B29 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		658CB5211DF6FBAB00667B29 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		658CB5241DF6FBAB00667B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		658CB5261DF6FBAB00667B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				658CB51D1DF6FBAB00667B29 /* AppDelegate.swift */,
-				658CB51F1DF6FBAB00667B29 /* FirstViewController.swift */,
+				658CB51F1DF6FBAB00667B29 /* CurrentLocationViewController.swift */,
 				658CB5211DF6FBAB00667B29 /* SecondViewController.swift */,
 				658CB5231DF6FBAB00667B29 /* Main.storyboard */,
 				658CB5261DF6FBAB00667B29 /* Assets.xcassets */,
@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					658CB5191DF6FBAB00667B29 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4RH753AMBU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,7 +142,7 @@
 			files = (
 				658CB5221DF6FBAB00667B29 /* SecondViewController.swift in Sources */,
 				658CB51E1DF6FBAB00667B29 /* AppDelegate.swift in Sources */,
-				658CB5201DF6FBAB00667B29 /* FirstViewController.swift in Sources */,
+				658CB5201DF6FBAB00667B29 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4RH753AMBU;
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DutchRascal.MyLocations;
@@ -274,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4RH753AMBU;
 				INFOPLIST_FILE = MyLocations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DutchRascal.MyLocations;
