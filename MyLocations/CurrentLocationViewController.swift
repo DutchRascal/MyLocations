@@ -176,6 +176,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             
             latitudeLabel.text = ""
             longitudeLabel.text = ""
+            addressLabel.text = ""
             tagButton.isHidden = true
             
             let statusMessage: String
@@ -202,7 +203,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
             updatingLocation = true
-            timer = Timer.scheduledTimer(timeInterval: 69, target: self, selector: #selector(didTimeOut), userInfo: nil, repeats: false)
+            timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(didTimeOut), userInfo: nil, repeats: false)
         }
     }
     
@@ -256,5 +257,15 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             configureGetButton()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "TagLocation" {
+            let navigationController = segue.destination as! UINavigationController
+            let controller = navigationController.topViewController as! LocationDetailsViewController
+            controller.coordinate = location!.coordinate
+            controller.placemark = placemark
+        }
+    }
+    
 }
 

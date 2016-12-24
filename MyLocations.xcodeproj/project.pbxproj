@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65393C771E0C3C6F00809739 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65393C761E0C3C6F00809739 /* HudView.swift */; };
+		65393C791E0EA30E00809739 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65393C781E0EA30E00809739 /* Functions.swift */; };
 		658CB51E1DF6FBAB00667B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CB51D1DF6FBAB00667B29 /* AppDelegate.swift */; };
 		658CB5201DF6FBAB00667B29 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CB51F1DF6FBAB00667B29 /* CurrentLocationViewController.swift */; };
 		658CB5221DF6FBAB00667B29 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CB5211DF6FBAB00667B29 /* SecondViewController.swift */; };
 		658CB5251DF6FBAB00667B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658CB5231DF6FBAB00667B29 /* Main.storyboard */; };
 		658CB5271DF6FBAB00667B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658CB5261DF6FBAB00667B29 /* Assets.xcassets */; };
 		658CB52A1DF6FBAB00667B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658CB5281DF6FBAB00667B29 /* LaunchScreen.storyboard */; };
+		65D936751E02E7FC008F5C55 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D936741E02E7FC008F5C55 /* LocationDetailsViewController.swift */; };
+		65D936771E048184008F5C55 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D936761E048184008F5C55 /* CategoryPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65393C761E0C3C6F00809739 /* HudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		65393C781E0EA30E00809739 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		658CB51A1DF6FBAB00667B29 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		658CB51D1DF6FBAB00667B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		658CB51F1DF6FBAB00667B29 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		658CB5261DF6FBAB00667B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		658CB5291DF6FBAB00667B29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		658CB52B1DF6FBAB00667B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D936741E02E7FC008F5C55 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
+		65D936761E048184008F5C55 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				658CB51F1DF6FBAB00667B29 /* CurrentLocationViewController.swift */,
 				658CB5211DF6FBAB00667B29 /* SecondViewController.swift */,
 				658CB5231DF6FBAB00667B29 /* Main.storyboard */,
+				65393C761E0C3C6F00809739 /* HudView.swift */,
+				65D936741E02E7FC008F5C55 /* LocationDetailsViewController.swift */,
+				65D936761E048184008F5C55 /* CategoryPickerViewController.swift */,
+				65393C781E0EA30E00809739 /* Functions.swift */,
 				658CB5261DF6FBAB00667B29 /* Assets.xcassets */,
 				658CB5281DF6FBAB00667B29 /* LaunchScreen.storyboard */,
 				658CB52B1DF6FBAB00667B29 /* Info.plist */,
@@ -94,7 +106,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Andre Boevink";
 				TargetAttributes = {
 					658CB5191DF6FBAB00667B29 = {
@@ -140,8 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D936751E02E7FC008F5C55 /* LocationDetailsViewController.swift in Sources */,
 				658CB5221DF6FBAB00667B29 /* SecondViewController.swift in Sources */,
+				65393C771E0C3C6F00809739 /* HudView.swift in Sources */,
+				65393C791E0EA30E00809739 /* Functions.swift in Sources */,
 				658CB51E1DF6FBAB00667B29 /* AppDelegate.swift in Sources */,
+				65D936771E048184008F5C55 /* CategoryPickerViewController.swift in Sources */,
 				658CB5201DF6FBAB00667B29 /* CurrentLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +202,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -235,6 +252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -304,6 +322,7 @@
 				658CB5301DF6FBAB00667B29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
